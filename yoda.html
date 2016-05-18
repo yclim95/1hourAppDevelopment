@@ -5,6 +5,29 @@
         <!-- Script -->
         <script src = "https://code.jquery.com/jquery-git.min.js"></script>
         <script src = "https://code.jquery.com/jquery-migrate-git.min.js"></script>
+
+        <script>
+            window.onload = function()
+            {
+                $('#btnTranslate').on('click',translateText);
+            }
+
+            function translateText()
+            {
+                var textToTranslate = $('#textToTranslate').val();
+                var url = "https://yoda.p.mashape.com/yoda?sentence=" + textToTranslate;
+                //Ajax
+                $.ajax({url:url,
+                        headers: {"X-Mashape-Key":"zMMFAHb37vmshLtzdw2bzJz9SZr3p16so94jsn3XudrcxVQTWr"
+                            },
+                        success: function(result){
+                         $("#result").html(result);
+                        }
+
+                       })
+            }
+        </script>
+
         <!-- StyleSheet -->
         <style>
             h1 {

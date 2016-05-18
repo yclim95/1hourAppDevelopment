@@ -13,4 +13,4 @@ Simple Web Development (Yoga Talk). Simply translate your text into Yoga languag
 1. [JQuery code](https://code.jquery.com/jquery/)
 
 ##Preview(Output)
-![Output Of TheApp][https://github.com/yclim95/1hourAppDevelopment/blob/master/preview.png]
+![Output Of TheApp](https://github.com/yclim95/1hourAppDevelopment/blob/master/preview.png)

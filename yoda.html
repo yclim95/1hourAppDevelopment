@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Talk Like Yoda</title>
+        <!-- Script -->
+        <script src = "https://code.jquery.com/jquery-git.min.js"></script>
+        <script src = "https://code.jquery.com/jquery-migrate-git.min.js"></script>
+        <!-- StyleSheet -->
+        <style>
+            h1 {
+                font-family: Arial;
+            }
+
+            textarea {
+                width: 400px;
+                height: 100px;
+                background-color: #eeeeee;
+            }
+
+            label {
+                font-family: Arial, Verdana, sans-serif;
+            }
+
+            button{
+                width: 400px;
+                background-color: bisque;
+                font-weight: bold;
+            }
+
+            #translator{
+                border: 1px solid black;
+                padding: 10px;
+                background-color: #00aa00;
+                width: 420px;
+            }
+            #result{
+                margin-top: 20px;
+                border: 1px solid black;
+                background-color:white;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Talk Like Yoda App...</h1>
+        <div id = "translator">
+            <label for = "textToTranslate">Text To Translate</label>
+            <br/>
+            <textarea id = "textToTranslate"></textarea>
+            <br/>
+            <button id = "btnTranslate">Translate Text to Yoda Speak</button>
+            <div id = "result"></div>
+        </div>
+    </body>
+</html>
